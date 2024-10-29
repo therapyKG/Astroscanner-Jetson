@@ -1,0 +1,8 @@
+APScheduler==3.10.4
+Flask==3.0.3
+Flask_SocketIO==5.3.6
+Jetson.GPIO==2.1.6
+numpy==2.1.1
+pyserial==3.5
+python_fasthtml==0.2.1
+tifffile==2024.7.24
