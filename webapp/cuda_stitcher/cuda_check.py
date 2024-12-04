@@ -15,7 +15,7 @@ License: MIT (https://gist.github.com/f0k/63a664160d016a491b2cbea15913d549#gistc
 
 import sys
 import ctypes
-
+import cv2
 
 # Some constants taken from cuda.h
 CUDA_SUCCESS = 0
@@ -58,6 +58,7 @@ def ConvertSMVer2Cores(major, minor):
 
 
 def main():
+    cv2.cuda.printCudaDeviceInfo(0)
     libnames = ('libcuda.so', 'libcuda.dylib', 'nvcuda.dll', 'cuda.dll')
     for libname in libnames:
         try:
